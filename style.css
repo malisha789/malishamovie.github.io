@@ -1,0 +1,766 @@
+/* General Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #111;
+  color: #fff;
+}
+
+a {
+  color: #f7c400;
+  text-decoration: none;
+}
+
+a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Navigation */
+nav {
+  background: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+
+nav h1 {
+  color: #f7c400;
+}
+
+/* Logo Styling */
+nav .logo {
+  width: 50px; 
+  height: auto; 
+  margin-right: 1em;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 2em;
+  background: #000;
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Sections Common to Multiple Pages */
+.intro, .info, .branches, .food-grid, .game-grid, .faq-section {
+  padding: 2em;
+  background-color: #1a1a1a;
+  text-align: center;
+}
+
+.intro, .info {
+  background-color: #1a1a1a;
+}
+
+.info, .food-grid, .game-grid, .faq-section {
+  background-color: #1c1c1c;
+}
+/*footer*/
+.footer {
+  background-color: #111;
+  color: #eee;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-logo h2 {
+  color: #f7c400;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-contact,
+.footer-social {
+  min-width: 200px;
+  margin-top: 20px;
+}
+
+.footer-contact h3,
+.footer-social h3 {
+  color: #f7c400;
+  margin-bottom: 10px;
+}
+
+.footer-contact p,
+.footer-social a {
+  font-size: 14px;
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #f94c10;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-contact,
+  .footer-social {
+    margin-top: 30px;
+  }
+}
+
+
+
+
+
+/* Highlights Grid */
+.highlights {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 2em;
+}
+
+.feature {
+    background: #222;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.feature img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Branch Cards */
+.branches {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    padding: 2em;
+}
+
+.branch {
+    background-color: #222;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.branch img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.5em;
+}
+
+.branch iframe {
+    margin-top: 1em;
+    border-radius: 10px;
+}
+
+/* Table Styles for Summary */
+.summary {
+    padding: 2em;
+    background-color: #1c1c1c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.75em;
+    text-align: left;
+    border-bottom: 1px solid #555;
+}
+
+thead {
+    background-color: #333;
+}
+
+tfoot {
+    font-style: italic;
+    color: #ccc;
+}
+
+/* Movie Gallery */
+.movie-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    padding: 2em;
+}
+
+.movie-card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.movie-card .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #f7c400;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card:hover .overlay {
+    opacity: 1;
+}
+
+
+/* Game Grid */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5em;
+    padding: 2em;
+}
+
+.game-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: #222;
+}
+
+.game-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.game-info {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    color: #f7c400;
+    width: 100%;
+    padding: 0.75em;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-card:hover .game-info {
+    opacity: 1;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 2em;
+    background-color: #1a1a1a;
+}
+
+.faq {
+    margin-bottom: 1.5em;
+}
+
+.faq h3 {
+    color: #f7c400;
+}
+
+.faq p {
+    margin-left: 1em;
+}
+
+.query-form-section {
+    background-color: #1c1c1c;
+    padding: 2em;
+}
+
+.query-form-section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+.query-form-section label {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.query-form-section input,
+.query-form-section textarea {
+    padding: 0.75em;
+    margin-top: 0.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.query-form-section button {
+    margin-top: 1.5em;
+    padding: 0.75em;
+    background-color: #f7c400;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.query-form-section button:hover {
+    background-color: #ffe356;
+}
+
+/* Responsive Layouts */
+@media (min-width: 768px) {
+    .highlights {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .branches {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .movie-card {
+        width: 45%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-card {
+        width: 90%;
+        height: 220px;
+    }
+    .food-info,
+    .game-info {
+        font-size: 0.9em;
+    }
+}
+
+
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .booking-form {
+      grid-template-columns: 1fr;
+    }
+    
+    .seat-selection, .booking-summary, .form-actions {
+      grid-column: span 1;
+    }
+    
+    .seats-grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    
+    .modal-content {
+      width: 95%;
+      margin: 2% auto;
+    }
+  }
+
+
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #222;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+}
+
+/* Main Content */
+.booking-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.movie-selection h2, .booking-summary h2 {
+  color: #1a1a2e;
+  border-bottom: 2px solid #fbf9fa;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Movie Sections */
+.movie-section {
+  margin-bottom: 3rem;
+  padding: 1rem;
+  background-color: rgb(28, 28, 28);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.movie-section h2 {
+  color: #383839;
+  border-bottom: 2px solid #e7de3c;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Movie Grids */
+.movie-grid, .offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.movie-card {
+  background: rgb(53, 52, 52);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #f6f7f8;
+}
+
+.movie-details {
+  flex-grow: 1;
+}
+
+.movie-details p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: #d5d7d7;
+  line-height: 1.4;
+}
+
+.movie-details strong {
+  color: #c2c2c3;
+}
+
+.btn-book, .btn-notify {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.btn-book:hover, .btn-notify:hover {
+  background-color: #c0392b;
+}
+/* Booking Summary */
+.btn-book:hover,
+
+.booking-summary {
+  background-color: rgb(70, 70, 69);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #1a1a2e;
+  color: white;
+}
+
+tr:hover {
+  background-color: #5f5c5c;
+}
+
+tfoot td {
+  font-weight: bold;
+  background-color: #424141;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 1rem;
+}
+
+.btn-primary {
+background-color: #f46147;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #d13354;
+}
+
+.btn-secondary {
+  background-color: #1a1a2e;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #0f0f1f;
+}
+
+.booking-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group select, .form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    margin-top: 1rem;
+  }
+  
+  .booking-actions {
+    flex-direction: column;
+  }
+  
+  .btn {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+}
+
+
+
+/* Base (Mobile First) Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding: 1rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+nav ul {
+  flex-direction: column;
+}
+@media screen and (min-width: 480px) {
+  /* Example: Slightly larger phones */
+  body {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  nav {
+    padding: 1rem 2rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 18px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+

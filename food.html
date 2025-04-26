@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Page - ScopeLite Cinemas</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/web-app-manifest-192x192.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#e50914">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#e50914">
+    <meta name="apple-mobile-web-app-title" content="ScopeLite">
+    <link rel="stylesheet" href="food.css">
+  </head>
+<body>
+
+  <header>
+    <nav>
+        <img src="images/logo.png" alt="flicksphere cinema logo" class="logo">
+      <h1>FlickSphere Cinemas</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="upcoming.html">Upcoming</a></li>
+        <li><a href="nowshowing.html">Now showing</a></li>
+        <li><a href="food.html" class="active">Food</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="faq.html">FAQs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Snack Bar Menu</h2>
+      <p>Delicious snacks and drinks to enjoy with your movie!</p>
+    </section>
+
+    <!-- Cart and Favorites Sidebar -->
+    <div class="sidebar">
+      <div class="sidebar-tabs">
+        <button class="tab-btn active" data-tab="cart-tab"><i class="fas fa-shopping-cart"></i> Cart</button>
+        <button class="tab-btn" data-tab="favorites-tab"><i class="fas fa-heart"></i> Favorites</button>
+      </div>
+      
+      <div class="tab-content active" id="cart-tab">
+        <h3>Your Cart</h3>
+        <div class="cart-items">
+          <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-total">
+          <p>Total: <span class="total-amount">Rs. 0</span></p>
+        </div>
+        <button class="clear-cart-btn">Clear Cart</button>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+      
+      <div class="tab-content" id="favorites-tab">
+        <h3>Your Favorites</h3>
+        <div class="favorites-items">
+          <!-- Favorite items will be added here dynamically -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Food Categories (same structure as before) -->
+    <section class="food-category">
+      <h3>POPCORN</h3>
+      <div class="food-slider-container">
+        <button class="slider-arrow left-arrow" aria-label="Previous">&lt;</button>
+        <div class="food-slider">
+          <div class="food-slider-track">
+            <div class="food-card">
+              <img src="images/saltedcorn.jpg" alt="Salted Popcorn">
+              <div class="food-info">Salted Popcorn - Rs. 350</div>
+            </div>
+            <div class="food-card">
+              <img src="images/cheesecorn.jpg" alt="Cheese Popcorn">
+              <div class="food-info">Cheese Popcorn - Rs. 450</div>
+            </div>
+            <div class="food-card">
+              <img src="images/mnmcorn.jpg" alt="M&M Popcorn">
+              <div class="food-info">M&M Popcorn - Rs. 450</div>
+            </div>
+            <div class="food-card">
+              <img src="images/spicycorn.jpg" alt="Spicy Popcorn">
+              <div class="food-info">Spicy Popcorn - Rs. 350</div>
+            </div>
+            <div class="food-card">
+              <img src="images/chocolatecorn.jpg" alt="Chocolate Popcorn">
+              <div class="food-info">Chocolate Popcorn - Rs. 350</div>
+            </div>
+            <div class="food-card">
+              <img src="images/caramelcorn.jpg" alt="Caramel Popcorn">
+              <div class="food-info">Caramel Popcorn - Rs. 350</div>
+            </div>
+          </div>
+        </div>
+        <button class="slider-arrow right-arrow" aria-label="Next">&gt;</button>
+      </div>
+    </section>
+
+    <section class="food-category">
+      <h3>SNACKS</h3>
+      <div class="food-slider-container">
+        <button class="slider-arrow left-arrow" aria-label="Previous">&lt;</button>
+        <div class="food-slider">
+          <div class="food-slider-track">
+            <div class="food-card">
+              <img src="images/nachos.jpg" alt="Cheesy Nachos">
+              <div class="food-info">Cheesy Nachos - Rs. 750</div>
+            </div>
+            <div class="food-card">
+              <img src="images/hotdog.jpg" alt="Hot Dog">
+              <div class="food-info">Hot Dog - Rs. 500</div>
+            </div>
+            <div class="food-card">
+              <img src="images/cookies.jpg" alt="Cookies">
+              <div class="food-info">Chocolate Chip Cookies - Rs. 300</div>
+            </div>
+            <div class="food-card">
+              <img src="images/chips.jpg" alt="Spicy Chips">
+              <div class="food-info">Spicy Chips - Rs. 300</div>
+            </div>
+            <div class="food-card">
+              <img src="images/fruitbowl.jpg" alt="Fruit Bowl">
+              <div class="food-info">Fruit Bowl - Rs. 400</div>
+            </div>
+            <div class="food-card">
+              <img src="images/combo.jpg" alt="Combo Meal">
+              <div class="food-info">Meal Combo - Rs. 1200</div>
+            </div>
+          </div>
+        </div>
+        <button class="slider-arrow right-arrow" aria-label="Next">&gt;</button>
+      </div>
+    </section>
+
+    <!-- Drinks Section -->
+    <section class="food-category">
+      <h3>DRINKS & COLD ITEMS</h3>
+      <div class="food-slider-container">
+        <button class="slider-arrow left-arrow" aria-label="Previous">&lt;</button>
+        <div class="food-slider">
+          <div class="food-slider-track">
+            <div class="food-card">
+              <img src="images/cola.jpg" alt="Cherry Cola">
+              <div class="food-info">Cherry Cola - Rs. 600</div>
+            </div>
+            <div class="food-card">
+              <img src="images/icecream.jpg" alt="Vanilla Ice Cream">
+              <div class="food-info">Vanilla Ice Cream - Rs. 300</div>
+            </div>
+            <div class="food-card">
+              <img src="images/milkshake.jpg" alt="Chocolate Milkshake">
+              <div class="food-info">Chocolate Milkshake - Rs. 450</div>
+            </div>
+            <div class="food-card">
+              <img src="images/smoothie.jpg" alt="Fruit Smoothie">
+              <div class="food-info">Fruit Smoothie - Rs. 500</div>
+            </div>
+            <div class="food-card">
+              <img src="images/icedtea.jpg" alt="Iced Tea">
+              <div class="food-info">Iced Tea - Rs. 350</div>
+            </div>
+            <div class="food-card">
+              <img src="images/water.jpg" alt="Mineral Water">
+              <div class="food-info">Mineral Water - Rs. 200</div>
+            </div>
+          </div>
+        </div>
+        <button class="slider-arrow right-arrow" aria-label="Next">&gt;</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- About Section -->
+      <div class="footer-logo">
+        <h2>FlickSphere Cinemas</h2>
+        <p>&copy; 2025 FlickSphere Cinemas. All rights reserved.</p>
+      </div>
+  
+      <!-- Contact Section -->
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>📍 123 Cinema Lane, Colombo</p>
+        <p>📞 +94 77 123 4567</p>
+        <p>📧 info@FlickSpherecinemas.com</p>
+      </div>
+  
+      <!-- Social Links Section -->
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">Facebook</a>
+        <a href="#" target="_blank">X (Twitter)</a>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <a href="nowshowing.html">Now Showing, </a>
+        <a href="upcoming.html">Upcoming Movies, </a>
+        <a href="faq.html">FAQ, </a>
+        <a href="#">Privacy Policy, </a>
+        <a href="#">Terms & Conditions, </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="food.js"></script>
+</body>
+</html>

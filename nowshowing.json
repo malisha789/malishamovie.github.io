@@ -1,0 +1,561 @@
+{
+  "nowShowing": [
+    {
+      "id": 1,
+      "title": "Dune: Part Two",
+      "image": "images/dune.jpg",
+      "rating": "PG-13",
+      "duration": "2h 46m",
+      "genre": ["Sci-Fi", "Adventure"],
+      "description": "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.",
+      "showtimes": [
+        {
+          "time": "10:00 AM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 120
+        },
+        {
+          "time": "1:30 PM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 95
+        },
+        {
+          "time": "5:00 PM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 150
+        },
+        {
+          "time": "8:30 PM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 80
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Kung Fu Panda 4",
+      "image": "images/kungfupanda.jpg",
+      "rating": "PG",
+      "duration": "1h 34m",
+      "genre": ["Animation", "Action", "Comedy"],
+      "description": "Po is called upon to become the Spiritual Leader of the Valley of Peace, but first he must find and train a new Dragon Warrior.",
+      "showtimes": [
+        {
+          "time": "11:00 AM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 110
+        },
+        {
+          "time": "2:00 PM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 75
+        },
+        {
+          "time": "4:30 PM",
+          "type": "3D",
+          "price": 1400,
+          "seatsAvailable": 90
+        },
+        {
+          "time": "7:00 PM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 60
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "The Fall Guy",
+      "image": "images/fallguy.jpg",
+      "rating": "PG-13",
+      "duration": "2h 5m",
+      "genre": ["Action", "Comedy"],
+      "description": "A stuntman gets embroiled in a conspiracy surrounding a missing movie star.",
+      "showtimes": [
+        {
+          "time": "10:30 AM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 85
+        },
+        {
+          "time": "1:00 PM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 70
+        },
+        {
+          "time": "4:00 PM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 95
+        },
+        {
+          "time": "7:30 PM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 110
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Godzilla x Kong: The New Empire",
+      "image": "images/godzilla.jpg",
+      "rating": "PG-13",
+      "duration": "1h 55m",
+      "genre": ["Action", "Sci-Fi"],
+      "description": "Godzilla and Kong must unite against a colossal undiscovered threat hidden within our world.",
+      "showtimes": [
+        {
+          "time": "11:30 AM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 90
+        },
+        {
+          "time": "2:30 PM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 65
+        },
+        {
+          "time": "5:30 PM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 120
+        },
+        {
+          "time": "8:00 PM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 75
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Furiosa: A Mad Max Saga",
+      "image": "images/furiosa.jpg",
+      "rating": "R",
+      "duration": "2h 28m",
+      "genre": ["Action", "Adventure"],
+      "description": "The origin story of renegade warrior Furiosa before she teamed up with Mad Max.",
+      "showtimes": [
+        {
+          "time": "12:00 PM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 100
+        },
+        {
+          "time": "3:30 PM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 80
+        },
+        {
+          "time": "6:30 PM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 110
+        },
+        {
+          "time": "9:30 PM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 60
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "The Garfield Movie",
+      "image": "images/garfield.jpg",
+      "rating": "PG",
+      "duration": "1h 41m",
+      "genre": ["Animation", "Comedy"],
+      "description": "Garfield is about to go on a wild outdoor adventure after reuniting with his long-lost father.",
+      "showtimes": [
+        {
+          "time": "10:00 AM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 95
+        },
+        {
+          "time": "12:30 PM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 70
+        },
+        {
+          "time": "3:00 PM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 85
+        },
+        {
+          "time": "5:30 PM",
+          "type": "Standard",
+          "price": 1000,
+          "seatsAvailable": 65
+        }
+      ]
+    }
+  ],
+  "upcomingMovies": [
+    {
+      "id": 7,
+      "title": "Inside Out 2",
+      "image": "images/insideout.jpg",
+      "rating": "PG",
+      "releaseDate": "June 14, 2025",
+      "genre": ["Animation", "Comedy"],
+      "description": "Riley enters adolescence as new emotions join the existing ones in Headquarters."
+    },
+    {
+      "id": 8,
+      "title": "Deadpool & Wolverine",
+      "image": "images/deadpool.jpg",
+      "rating": "R",
+      "releaseDate": "July 26, 2025",
+      "genre": ["Action", "Comedy"],
+      "description": "Deadpool teams up with Wolverine for a multiversal adventure."
+    },
+    {
+      "id": 9,
+      "title": "Joker: Folie à Deux",
+      "image": "images/joker.jpg",
+      "rating": "R",
+      "releaseDate": "October 4, 2025",
+      "genre": ["Drama", "Thriller"],
+      "description": "Arthur Fleck finds love in Arkham Asylum with fellow patient Harleen Quinzel."
+    },
+    {
+      "id": 10,
+      "title": "Gladiator II",
+      "image": "images/gladiator.jpg",
+      "rating": "R",
+      "releaseDate": "November 22, 2025",
+      "genre": ["Action", "Drama"],
+      "description": "Lucius, the son of Maximus' love Lucilla, seeks vengeance in the Roman Empire."
+    },
+    {
+      "id": 11,
+      "title": "Mufasa: The Lion King",
+      "image": "images/mufasa.jpg",
+      "rating": "PG",
+      "releaseDate": "December 20, 2025",
+      "genre": ["Animation", "Adventure"],
+      "description": "The origin story of Mufasa, from orphaned cub to legendary king of the Pride Lands."
+    },
+    {
+      "id": 12,
+      "title": "Mission: Impossible 8",
+      "image": "images/missionimpossible.jpg",
+      "rating": "PG-13",
+      "releaseDate": "May 23, 2025",
+      "genre": ["Action", "Adventure"],
+      "description": "Ethan Hunt and his IMF team face their most dangerous mission yet."
+    }
+  ],
+  "premiumScreenings": [
+    {
+      "id": 13,
+      "title": "Dune: Part Two (IMAX)",
+      "image": "images/dune.jpg",
+      "type": "IMAX",
+      "description": "Experience Dune: Part Two in stunning IMAX format.",
+      "showtimes": [
+        {
+          "time": "12:30 PM",
+          "type": "IMAX",
+          "price": 1500,
+          "seatsAvailable": 200
+        },
+        {
+          "time": "4:30 PM",
+          "type": "IMAX",
+          "price": 1500,
+          "seatsAvailable": 180
+        },
+        {
+          "time": "8:30 PM",
+          "type": "IMAX",
+          "price": 1500,
+          "seatsAvailable": 150
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Oppenheimer (70mm)",
+      "image": "images/oppenheimer.jpg",
+      "type": "70mm Film",
+      "description": "Christopher Nolan's epic in its original 70mm film format.",
+      "showtimes": [
+        {
+          "time": "11:00 AM",
+          "type": "70mm",
+          "price": 1800,
+          "seatsAvailable": 120
+        },
+        {
+          "time": "3:00 PM",
+          "type": "70mm",
+          "price": 1800,
+          "seatsAvailable": 100
+        },
+        {
+          "time": "7:00 PM",
+          "type": "70mm",
+          "price": 1800,
+          "seatsAvailable": 90
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Interstellar (IMAX)",
+      "image": "images/interstellar.jpg",
+      "type": "IMAX",
+      "description": "The 10th anniversary screening of Nolan's space epic in IMAX.",
+      "showtimes": [
+        {
+          "time": "10:30 AM",
+          "type": "IMAX",
+          "price": 1500,
+          "seatsAvailable": 150
+        },
+        {
+          "time": "2:30 PM",
+          "type": "IMAX",
+          "price": 1500,
+          "seatsAvailable": 130
+        },
+        {
+          "time": "6:30 PM",
+          "type": "IMAX",
+          "price": 1500,
+          "seatsAvailable": 110
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "The Dark Knight (IMAX)",
+      "image": "images/darkknight.jpg",
+      "type": "IMAX",
+      "description": "Special anniversary screening of the Batman classic in IMAX.",
+      "showtimes": [
+        {
+          "time": "1:00 PM",
+          "type": "IMAX",
+          "price": 1500,
+          "seatsAvailable": 180
+        },
+        {
+          "time": "5:00 PM",
+          "type": "IMAX",
+          "price": 1500,
+          "seatsAvailable": 160
+        },
+        {
+          "time": "9:00 PM",
+          "type": "IMAX",
+          "price": 1500,
+          "seatsAvailable": 140
+        }
+      ]
+    }
+  ],
+  "threeDImax": [
+    {
+      "id": 17,
+      "title": "Avatar: The Way of Water (3D)",
+      "image": "images/avatar.jpg",
+      "type": "3D",
+      "description": "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora.",
+      "showtimes": [
+        {
+          "time": "11:30 AM",
+          "type": "3D",
+          "price": 1400,
+          "seatsAvailable": 120
+        },
+        {
+          "time": "3:30 PM",
+          "type": "3D",
+          "price": 1400,
+          "seatsAvailable": 90
+        },
+        {
+          "time": "7:30 PM",
+          "type": "3D",
+          "price": 1400,
+          "seatsAvailable": 60
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Spider-Man: Across the Spider-Verse (3D)",
+      "image": "images/spiderman.jpg",
+      "type": "3D",
+      "description": "Miles Morales catapults across the Multiverse where he encounters a team of Spider-People.",
+      "showtimes": [
+        {
+          "time": "10:00 AM",
+          "type": "3D",
+          "price": 1400,
+          "seatsAvailable": 110
+        },
+        {
+          "time": "1:00 PM",
+          "type": "3D",
+          "price": 1400,
+          "seatsAvailable": 85
+        },
+        {
+          "time": "4:00 PM",
+          "type": "3D",
+          "price": 1400,
+          "seatsAvailable": 70
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "The Super Mario Bros. Movie (3D)",
+      "image": "images/mario.jpg",
+      "type": "3D",
+      "description": "A plumber named Mario travels through an underground labyrinth with his brother Luigi.",
+      "showtimes": [
+        {
+          "time": "12:00 PM",
+          "type": "3D",
+          "price": 1400,
+          "seatsAvailable": 95
+        },
+        {
+          "time": "3:00 PM",
+          "type": "3D",
+          "price": 1400,
+          "seatsAvailable": 75
+        },
+        {
+          "time": "6:00 PM",
+          "type": "3D",
+          "price": 1400,
+          "seatsAvailable": 55
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Guardians of the Galaxy Vol. 3 (3D)",
+      "image": "images/gotg3.jpg",
+      "type": "3D",
+      "description": "The Guardians must protect one of their own while unraveling the mysteries of Rocket's past.",
+      "showtimes": [
+        {
+          "time": "11:00 AM",
+          "type": "3D",
+          "price": 1400,
+          "seatsAvailable": 100
+        },
+        {
+          "time": "2:00 PM",
+          "type": "3D",
+          "price": 1400,
+          "seatsAvailable": 80
+        },
+        {
+          "time": "5:00 PM",
+          "type": "3D",
+          "price": 1400,
+          "seatsAvailable": 65
+        }
+      ]
+    }
+  ],
+  "specialOffers": [
+    {
+      "id": 21,
+      "title": "Family Package",
+      "description": "4 tickets + 2 large popcorns + 4 drinks",
+      "price": 4000,
+      "originalPrice": 5000,
+      "validFor": ["All Standard Screenings"],
+      "terms": "Valid for up to 2 adults and 2 children"
+    },
+    {
+      "id": 22,
+      "title": "Matinee Madness",
+      "description": "All shows before 2pm at 25% off",
+      "discount": "25%",
+      "validFor": ["All movies before 2pm"],
+      "terms": "Not valid with other offers"
+    },
+    {
+      "id": 23,
+      "title": "Student Tuesdays",
+      "description": "50% off for students every Tuesday",
+      "discount": "50%",
+      "validFor": ["All Standard Screenings"],
+      "terms": "Valid student ID required"
+    },
+    {
+      "id": 24,
+      "title": "Senior Citizen Discount",
+      "description": "30% off for seniors (60+) on Wednesdays",
+      "discount": "30%",
+      "validFor": ["All Standard Screenings"],
+      "terms": "Valid ID proof required"
+    }
+  ],
+  "theaters": [
+    {
+      "id": 1,
+      "name": "Main Auditorium",
+      "capacity": 250,
+      "type": "Standard"
+    },
+    {
+      "id": 2,
+      "name": "IMAX Theater",
+      "capacity": 200,
+      "type": "IMAX"
+    },
+    {
+      "id": 3,
+      "name": "3D Theater",
+      "capacity": 180,
+      "type": "3D"
+    },
+    {
+      "id": 4,
+      "name": "Premium Lounge",
+      "capacity": 100,
+      "type": "VIP"
+    }
+  ],
+  "pricing": {
+    "standard": 1000,
+    "premium": 1500,
+    "vip": 2000,
+    "3d": 1400,
+    "imax": 1500,
+    "child": 700,
+    "senior": 800,
+    "student": 800
+  }
+}
